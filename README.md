@@ -54,7 +54,7 @@ Web4 adds **geographic** and **temporal** information on top of web3. You'll fin
 
 
 
-| Full geotemporal options | 
+
 | :----:  | :----: | :---- |
 | timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
 | date       | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
