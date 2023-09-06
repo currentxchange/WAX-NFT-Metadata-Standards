@@ -43,18 +43,21 @@ Here are the basic fields. Each type of media has a slightly different list of f
 
 
 # Web 4 Options
-Web4 adds **geographic** and **temporal** information on top of web3. You'll find full + lite options for each available for each standard:
-| Lite geotemporal options | 
+Web4 adds **geographic** and **temporal** information on top of web3. You'll find full + lite options for each available for each standard: 
+
+## Lite geotemporal options 
+| Field name | Type | Description | 
 | :----:  | :----: | :---- |
 | timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
 | date       | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
 | nation | string | Three-letter ISO (USA, BRA, AUS, etc) |  
-| location | string | Local locales (State, County, City in USA) |  
+| location | string | Locale, format: "City, State, Nation" (State, County, City in USA) |  
 | geotag | string | GeoJSON Point stored as string, format "lat,lng" (e.g., "37.7749,-122.4194"), or a "[lat,lng]" coordinate array (e.g., "[37.7749, -122.4194]") |  
 
 
 
-
+## Full geotemporal options 
+| Field name | Type | Description | 
 | :----:  | :----: | :---- |
 | timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
 | date       | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
