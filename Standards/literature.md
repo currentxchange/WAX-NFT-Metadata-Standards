@@ -1,30 +1,24 @@
-# Photo Media Standard
-Use this for any photography-focused NFT schema/category. 
+# Literature Media Standard
+Use this for any literature-focused NFT schema/category.
 
 # Additional Fields 
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |
-| camera | string | The camera model used | 
-| lens | string | The lens model used | 
-| exposure | string | The exposure settings, e.g. "1/125 sec at f/5.6" |
-| focal | number | The focal length of the lens in mm | 
-| iso | number | The ISO setting used | 
-| raw | ipfs | Unedited max resolution of image. | 
-| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 |
-| ratio | string | Aspect ratio of the photo, e.g. 16:9 |
+| series | string | Series the work is part of |  
+| pages | number | Number of pages in the work |  
+| isbn | string | ISBN identifier for the work |  
+| publisher | string | Publisher of the work |  
 
 ## Changed Fields
-`artist` is called `photographer`
-
+`artist` is called `author`
+`nsfw` field is absent
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |  
-| photographer | string | Photographer of the work |
+| author | string | Author of the work |  
 
-
-
-# 🛠 Photo NFT Standard 
+# 🛠 Literature NFT Standard 
 ```javascript
 [
   {
@@ -36,7 +30,7 @@ Use this for any photography-focused NFT schema/category.
     "type": "ipfs"
   },
   {          
-    "name": "photographer", 
+    "name": "author", 
     "type": "string"
   },
   {
@@ -48,36 +42,12 @@ Use this for any photography-focused NFT schema/category.
     "type": "string"
   },
   {
-    "name": "camera",
+    "name": "series",
     "type": "string"
   },
   {
-    "name": "lens",
-    "type": "string"
-  },
-  {
-    "name": "exposure",
-    "type": "string"
-  },
-  {
-    "name": "focal",
+    "name": "pages",
     "type": "int64"
-  },
-  {
-    "name": "iso",
-    "type": "int64"
-  },
-  {
-    "name": "raw",
-    "type": "ipfs"
-  },
-  {
-    "name": "resolution",
-    "type": "string"
-  },
-  {
-    "name": "ratio",
-    "type": "string"
   },
   {
     "name": "backimg",
@@ -148,7 +118,11 @@ Use this for any photography-focused NFT schema/category.
     "type": "string"
   },
   {
-    "name": "nsfw",
+    "name": "isbn",
+    "type": "string"
+  },
+  {
+    "name": "publisher",
     "type": "string"
   },
   {

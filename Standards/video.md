@@ -1,30 +1,29 @@
-# Photo Media Standard
-Use this for any photography-focused NFT schema/category. 
+# Video Media Standard
+Use this for any video NFT schema/category. This can be for a movie or a youtube video. 
 
 # Additional Fields 
 
-| Field | Type | Description |
-| :----:  | :----: | :----: |
-| camera | string | The camera model used | 
-| lens | string | The lens model used | 
-| exposure | string | The exposure settings, e.g. "1/125 sec at f/5.6" |
-| focal | number | The focal length of the lens in mm | 
-| iso | number | The ISO setting used | 
-| raw | ipfs | Unedited max resolution of image. | 
-| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 |
-| ratio | string | Aspect ratio of the photo, e.g. 16:9 |
+| Field | Type | Description | 
+| :----:  | :----: | :----: | 
+| video | ipfs | Video file via IPFS hash | 
+| format | string | Video format e.g. MP4, MOV | 
+| duration | string | Video lengths as "days : hour : minutes : seconds" "2:47" = two minutes 47 seconds | 
+| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 | 
+| fps | number | Frames per second of the video | 
+| ratio | string | Aspect ratio of the photo, e.g. 16:9 | 
 
 ## Changed Fields
-`artist` is called `photographer`
+`artist` is called `creator`
 
+Note: In this standard, many marketplaces will always show the img attribute. For this reason
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |  
-| photographer | string | Photographer of the work |
+| creator | string | Director or channel-owner of the work |  
 
 
 
-# 🛠 Photo NFT Standard 
+# 🛠 Video NFT Standard 
 ```javascript
 [
   {
@@ -35,8 +34,12 @@ Use this for any photography-focused NFT schema/category.
     "name": "img", 
     "type": "ipfs"
   },
+  {
+    "name": "video", 
+    "type": "ipfs"
+  },
   {          
-    "name": "photographer", 
+    "name": "creator", 
     "type": "string"
   },
   {
@@ -48,32 +51,20 @@ Use this for any photography-focused NFT schema/category.
     "type": "string"
   },
   {
-    "name": "camera",
+    "name": "format",
     "type": "string"
   },
   {
-    "name": "lens",
+    "name": "duration",
     "type": "string"
-  },
-  {
-    "name": "exposure",
-    "type": "string"
-  },
-  {
-    "name": "focal",
-    "type": "int64"
-  },
-  {
-    "name": "iso",
-    "type": "int64"
-  },
-  {
-    "name": "raw",
-    "type": "ipfs"
   },
   {
     "name": "resolution",
     "type": "string"
+  },
+  {
+    "name": "fps",
+    "type": "int64"
   },
   {
     "name": "ratio",

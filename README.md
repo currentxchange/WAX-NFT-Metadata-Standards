@@ -14,27 +14,28 @@ The WAX NFT metadata standards are a collection of fields to use when creating y
 
 # The Standards
 
-Are in the ./Standards directory.
+Are in the [./Standards](./Standards) directory.
 
 Here's how they work
 
 Here are the basic fields. Each type of media has a slightly different list of fields. 
 
-| Field name | Type | Description | 
+`string` just means text, `ipfs` is an [ipfs hash](https://www.pinata.cloud/) of the data.
+
+| Field | Type | Description | 
 | :----:  | :----: | :---- |
 | name | string | NFT name |  
-| img | image | Primary image |  
+| img | ipfa | Primary image, because this is an IPFS field, you can use a video here as well, under 7mb weight reccommended |  
 | artist | string | The artist, if you prefer a separate field to putting with other credits | 
 | title | string | The title of the work | 
-| about | string | Description field with main info about the work |   
-| backimg | image | Back cover of album / single |  
-
-| collectionimg | image | Extra image for Collection, optional |  
-
-| genre | string | Genre of the work |
-| mood | string | Mood of the work | 
+| about | string | Description field with main info about the work |  
+| backimg | ipfs | Back cover of art, or used as supplementary artwork |  
+| collectionimg | ipfs | Extra image for Collection, optional |  
+|<hr>|<hr>|<hr>|
+| genre | string | Genre of the work |  
+| mood | string | Mood of the work |  
 | format | string | Main medium and/or format of the work |  
-
+|<hr>|<hr>|<hr>|
 | credits | string | Array of song credits |  
 | link | string | A link where the work can be purchased or interacted with |  
 
@@ -45,32 +46,22 @@ Here are the basic fields. Each type of media has a slightly different list of f
 # Web 4 Options
 Web4 adds **geographic** and **temporal** information on top of web3. You'll find full + lite options for each available for each standard: 
 
-## Lite geotemporal options 
-| Field name | Type | Description | 
-| :----:  | :----: | :---- |
-| timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
-| date       | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
-| nation | string | Three-letter ISO (USA, BRA, AUS, etc) |  
-| location | string | Locale, format: "City, State, Nation" (State, County, City in USA) |  
-| geotag | string | GeoJSON Point stored as string, format "lat,lng" (e.g., "37.7749,-122.4194"), or a "[lat,lng]" coordinate array (e.g., "[37.7749, -122.4194]") |  
-
-
-
 ## Full geotemporal options 
-| Field name | Type | Description | 
+| Field | Type | Description | 
 | :----:  | :----: | :---- |
 | timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
-| date       | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
+| date | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
 | year       | string | Year when the work was published. Format: "YYYY". ⚠️ It's best to use either date or year/month/day, not both. |
 | month      | string | Month when the work was published. Format: "MM" or English abbreviation (e.g., "Jan", "Feb", etc.) or full month name |
 | day        | string | Day when the work was published. Format: "DD" or "D" |
-| location   | string | Full location information in one field, format: "City, State, Nation" |
+|<hr>|<hr>|<hr>|
+| location   | string | Full location information in one field, format: "City, State, Nation" Use this |
 | nation     | string | Three-letter ISO country code (e.g., "USA", "BRA", "AUS", etc.) Please don't use anything else, as this is the easiest format for any application to integrate |
 | state      | string | State or province for the location, format: Abbreviation convention used in nation (e.g., California as "CA", Antioquia as "ANT") |
 | city       | string | City for the location, format: "City Name" |
 | geotag     | string | GeoJSON Point stored as string, format "lat,lng" (e.g., "37.7749,-122.4194"), or a "[lat,lng]" coordinate array (e.g., "[37.7749, -122.4194]") |  
 
-
+> You may inpmement all options to allow templates of he same schema to choose what's best for them, instead of modifying it and keeping it for future unknown templates. 
 
 ## Implementation Options
 
@@ -81,13 +72,132 @@ You can either copy/paste them, as shown in the [Instructional Video](https://ww
 For **detailed instructions** on how to use, see this [article](https://medium.com/p/5b3f951bff05). 
 
 
-### RAM Note
+### RAM Usage
 While you may see more fields than you'd like to implement in your final NFT, it's okay to use them for the schema. This will make the ram requirement of schema creation slightly larger, but you'll only be charged for the fields you use when creating templates / NFTs./
 
 
-> This metadata is written specifically for Atomic Asset's [NFT standard](https://github.com/pinknetworkx/atomicassets-contract) on the [atomicassets contract](https://wax.bloks.io/account/atomicassets). Feel free to copy the code to other blockchains like NEAR, Ethereum, Cardano, etc.
+> This metadata is written specifically for Atomic Asset's [NFT standard](https://github.com/pinknetworkx/atomicassets-contract) on the [atomicassets contract](https://wax.bloks.io/account/atomicassets). 
 
 Feel free to fork, or open an issue to see improvement. 
+
+# 🛠 WAX NFT Metadata Standard
+For specific use cases, use these versions:
+[./Standards](./Standards/literature.md) 
+
+| Use Case | Link | 
+| :----:  | :---- | 
+| Literature | [Standards/literature.md](./Standards/literature.md) |
+| Photo | [Standards/photo.md](./Standards/photo.md) |
+| Video | [Standards/video.md](./Standards/video.md) |
+| Music (Pending) | [Standards/music.md](./Standards/music.md) |
+
+> Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate. 
+
+```javascript
+[
+  {
+    "name": "name",
+    "type": "string"
+  },
+  {
+    "name": "img", 
+    "type": "ipfs"
+  },
+  {          
+    "name": "artist", 
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "type": "string"
+  },
+    {
+    "name": "about",
+    "type": "string"
+  },
+  {
+    "name": "backimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "collectionimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "genre",
+    "type": "text"
+  },
+  {
+    "name": "mood",
+    "type": "text"
+  },
+  {
+    "name": "format",
+    "type": "text"
+  },
+  {
+    "name": "credits",
+    "type": "string"
+  },
+  {
+    "name": "link",
+    "type": "text"
+  },
+  {
+    "name": "timestamp",
+    "type": "string"
+  },
+  {
+    "name": "date",
+    "type": "string"
+  },
+  {
+    "name": "year",
+    "type": "string"
+  },
+    {
+    "name": "month",
+    "type": "string"
+  },
+    {
+    "name": "day",
+    "type": "string"
+  },
+  {
+    "name": "location",
+    "type": "string"
+  },
+  {
+    "name": "nation",
+    "type": "string"
+  },
+  {
+    "name": "state",
+    "type": "string"
+  },
+  {
+    "name": "city",
+    "type": "string"
+  },
+  {
+    "name": "geotag",
+    "type": "string"
+  },
+  {
+    "name": "nsfw",
+    "type": "string"
+  },
+  {
+    "name": "license",
+    "type": "bool"
+  },
+  {
+    "name": "rarity",
+    "type": "string"
+  }
+]
+```
+
 
 
 # Mini-Changelog
@@ -100,5 +210,3 @@ Feel free to fork, or open an issue to see improvement.
 This development is sponsored by [WAX Labs](https://labs.wax.io)
 
 > To tip the author, send any token, fungible or non, to `godsolislove` on EOS, WAX, or Telos. 
-
-
