@@ -25,7 +25,7 @@ Here are the basic fields. Each type of media has a slightly different list of f
 | Field | Type | Description | 
 | :----:  | :----: | :---- |
 | name | string | NFT name |  
-| img | ipfa | Primary image, because this is an IPFS field, you can use a video here as well, under 7mb weight reccommended |  
+| img | ipfs | Primary image, because this is an IPFS field, you can use a video here as well, under 7mb weight recommended |  
 | artist | string | The artist, if you prefer a separate field to putting with other credits | 
 | title | string | The title of the work | 
 | about | string | Description field with main info about the work |  
