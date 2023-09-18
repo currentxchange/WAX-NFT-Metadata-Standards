@@ -73,7 +73,7 @@ For **detailed instructions** on how to use, see this [article](https://medium.c
 
 
 ### RAM Usage
-While you may see more fields than you'd like to implement in your final NFT, it's okay to use them for the schema. This will make the ram requirement of schema creation slightly larger, but you'll only be charged for the fields you use when creating templates / NFTs./
+While you may see more fields than you'd like to implement in your final NFT, it's okay to use them for the schema. This will make the ram requirement of schema creation slightly larger, but you'll only be charged for the fields you use when creating templates + NFTs.
 
 
 > This metadata is written specifically for Atomic Asset's [NFT standard](https://github.com/pinknetworkx/atomicassets-contract) on the [atomicassets contract](https://wax.bloks.io/account/atomicassets). 
@@ -125,15 +125,15 @@ For specific use cases, use these versions:
   },
   {
     "name": "genre",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "mood",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "format",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "credits",
@@ -141,7 +141,7 @@ For specific use cases, use these versions:
   },
   {
     "name": "link",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "timestamp",
@@ -209,4 +209,3 @@ For specific use cases, use these versions:
 
 This development is sponsored by [WAX Labs](https://labs.wax.io)
 
-> To tip the author, send any token, fungible or non, to `godsolislove` on EOS, WAX, or Telos. 

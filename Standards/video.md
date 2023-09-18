@@ -80,15 +80,15 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "genre",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "mood",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "format",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "credits",
@@ -96,7 +96,7 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "link",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "timestamp",

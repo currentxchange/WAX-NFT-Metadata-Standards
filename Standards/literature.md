@@ -59,15 +59,15 @@ Use this for any literature-focused NFT schema/category.
   },
   {
     "name": "genre",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "mood",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "format",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "credits",
@@ -75,7 +75,7 @@ Use this for any literature-focused NFT schema/category.
   },
   {
     "name": "link",
-    "type": "text"
+    "type": "string"
   },
   {
     "name": "timestamp",
