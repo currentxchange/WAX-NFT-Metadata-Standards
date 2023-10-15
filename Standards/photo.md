@@ -149,7 +149,7 @@ Use this for any photography-focused NFT schema/category.
   },
   {
     "name": "nsfw",
-    "type": "string"
+    "type": "bool"
   },
   {
     "name": "license",

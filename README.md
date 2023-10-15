@@ -185,11 +185,11 @@ For specific use cases, use these versions:
   },
   {
     "name": "nsfw",
-    "type": "string"
+    "type": "bool"
   },
   {
     "name": "license",
-    "type": "bool"
+    "type": "string"
   },
   {
     "name": "rarity",

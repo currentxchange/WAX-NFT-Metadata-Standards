@@ -140,7 +140,7 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "nsfw",
-    "type": "string"
+    "type": "bool"
   },
   {
     "name": "license",
