@@ -6,7 +6,7 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
 | Field | Type | Description | 
 | :----:  | :----: | :----: | 
 | video | ipfs | Video file via IPFS hash | 
-| format | string | Video format e.g. MP4, MOV | 
+| filetype | string | Video format e.g. MP4, MOV | 
 | duration | string | Video lengths as "days : hour : minutes : seconds" "2:47" = two minutes 47 seconds | 
 | resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 | 
 | fps | number | Frames per second of the video | 

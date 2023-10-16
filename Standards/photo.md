@@ -10,8 +10,8 @@ Use this for any photography-focused NFT schema/category.
 | exposure | string | The exposure settings, e.g. "1/125 sec at f/5.6" |
 | focal | number | The focal length of the lens in mm | 
 | iso | number | The ISO setting used | 
-| raw | ipfs | Unedited max resolution of image. | 
-| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 |
+| raw | ipfs | Unedited RAW file with max resolution image. | 
+| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 or 4k |
 | ratio | string | Aspect ratio of the photo, e.g. 16:9 |
 
 ## Changed Fields

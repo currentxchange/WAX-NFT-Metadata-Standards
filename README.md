@@ -7,6 +7,8 @@ Supported Types:
 by: [cXc](https://cxc.world)
 ```
 
+## Mint professional-looking NFTs 
+
 The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on both US and WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.com/), [WAXdao](https://waxdao.com/) and more. 
 
 
@@ -14,11 +16,9 @@ The WAX NFT metadata standards are a collection of fields to use when creating y
 
 # The Standards
 
-Are in the [./Standards](./Standards) directory.
+Each standard uses these basic fields, and expands to a type-specific list of fields. 
 
-Here's how they work
-
-Here are the basic fields. Each type of media has a slightly different list of fields. 
+The individual standards are linked farther down, and exist in the [./Standards](./Standards) directory.
 
 `string` just means text, `ipfs` is an [ipfs hash](https://www.pinata.cloud/) of the data.
 
@@ -26,25 +26,25 @@ Here are the basic fields. Each type of media has a slightly different list of f
 | :----:  | :----: | :---- |
 | name | string | NFT name |  
 | img | ipfs | Primary image, because this is an IPFS field, you can use a video here as well, under 7mb weight recommended |  
-| artist | string | The artist, if you prefer a separate field to putting with other credits | 
+| artist | string | The artist, for multiple creators see the credits field | 
 | title | string | The title of the work | 
 | about | string | Description field with main info about the work |  
-| backimg | ipfs | Back cover of art, or used as supplementary artwork |  
+| backimg | ipfs | Back of the art/book, or used as supplementary artwork |  
 | collectionimg | ipfs | Extra image for Collection, optional |  
 |<hr>|<hr>|<hr>|
 | genre | string | Genre of the work |  
 | mood | string | Mood of the work |  
-| format | string | Main medium and/or format of the work |  
+| format | string | Main medium and/or format of the work. This may be used to declare a type/category like "short story" for literature |  
+| mood | string | A comma-separated list of categories |  
 |<hr>|<hr>|<hr>|
-| credits | string | Array of song credits |  
+| credits | string | List creator credits, suggested format "Script: Gudasol, Director: Pixy the Unicorn"  |  
 | link | string | A link where the work can be purchased or interacted with |  
-
-| license | string | Declare license, (Copyright, CC0, MIT, etc) |  
+| license | string | Declare license (Copyright [Year], CC0, MIT, etc) |  
 | rarity | string | How scarce is this NFT? Abundant Common Uncommon Rare Epic Mythic Unique |  
 
 
 # Web 4 Options
-Web4 adds **geographic** and **temporal** information on top of web3. You'll find full + lite options for each available for each standard: 
+Web4 adds **space** and **time** information on top of web3. You'll find full + lite options for each available for each standard: 
 
 ## Full geotemporal options 
 | Field | Type | Description | 
@@ -73,10 +73,10 @@ For **detailed instructions** on how to use, see this [article](https://medium.c
 
 
 ### RAM Usage
-While you may see more fields than you'd like to implement in your final NFT, it's okay to use them for the schema. This will make the ram requirement of schema creation slightly larger, but you'll only be charged for the fields you use when creating templates + NFTs.
+While you may see more fields than you'd like to implement in your final NFT, it's okay to use them for the schema. This will make the [RAM requirement](https://anyobservation.medium.com/basic-wax-account-management-d956d74ff103) of schema creation slightly larger, but you'll only be charged for the fields you use when creating templates + NFTs.
 
 
-> This metadata is written specifically for Atomic Asset's [NFT standard](https://github.com/pinknetworkx/atomicassets-contract) on the [atomicassets contract](https://wax.bloks.io/account/atomicassets). 
+> This metadata is written specifically for Atomic Assets' [NFT standard](https://github.com/pinknetworkx/atomicassets-contract) on the [atomicassets contract](https://wax.bloks.io/account/atomicassets). 
 
 Feel free to fork, or open an issue to see improvement. 
 
@@ -87,9 +87,11 @@ For specific use cases, use these versions:
 | Use Case | Link | 
 | :----:  | :---- | 
 | Literature | [Standards/literature.md](./Standards/literature.md) |
-| Photo | [Standards/photo.md](./Standards/photo.md) |
 | Video | [Standards/video.md](./Standards/video.md) |
-| Music (Pending) | [Standards/music.md](./Standards/music.md) |
+| Image | [Standards/image.md](./Standards/image.md) |
+| Photo | [Standards/photo.md](./Standards/photo.md) |
+| Music | [Standards/photo.md](./Standards/music.md) |
+| Original Music Standard | [currentxchange/Music-NFT-Standard](https://github.com/currentxchange/Music-NFT-Standard) |
 
 > Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate. 
 
@@ -207,5 +209,5 @@ For specific use cases, use these versions:
 
 # Support this development
 
-This development is sponsored by [WAX Labs](https://labs.wax.io)
+This development is sponsored by [WAX Labs](https://labs.wax.io). Support NFT artists by purchasing + trading their NFTs. 
 
