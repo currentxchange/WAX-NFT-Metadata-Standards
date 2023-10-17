@@ -87,6 +87,10 @@ None of the default fields are changed.
     "type": "string"
   },
   {
+    "name": "promo", 
+    "type": "ipfs"
+  },
+  {
     "name": "nsfw",
     "type": "bool"
   },
@@ -172,6 +176,10 @@ None of the default fields are changed.
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "timestamp",

@@ -6,6 +6,7 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
 | Field | Type | Description | 
 | :----:  | :----: | :----: | 
 | video | ipfs | Video file via IPFS hash | 
+| youtube | string | Youtube link | 
 | filetype | string | Video format e.g. MP4, MOV | 
 | duration | string | Video lengths as "days : hour : minutes : seconds" "2:47" = two minutes 47 seconds | 
 | resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 or 4k | 
@@ -40,6 +41,10 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
   {
     "name": "video", 
     "type": "ipfs"
+  },
+  {          
+    "name": "youtube", 
+    "type": "string"
   },
   {          
     "name": "creator", 
@@ -104,6 +109,10 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "nsfw",
@@ -141,6 +150,10 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
     "type": "ipfs"
   },
   {          
+    "name": "youtube", 
+    "type": "string"
+  },
+  {          
     "name": "creator", 
     "type": "string"
   },
@@ -203,6 +216,10 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "timestamp",

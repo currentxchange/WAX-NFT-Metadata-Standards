@@ -1,31 +1,29 @@
-# Photo Media Standard
-Use this for any photography-focused NFT schema/category. 
+# Music Media Standard
+Use this for any image-focused NFT schema/category that isn't a photograph. 
+
+> Note: We have published another [Music NFT standard](https://github.com/currentxchange/Music-NFT-Standard) previous to the media standards. This version is fully compatible with the larger set of media standards published here. To ensure maximum compatibility, we suggest that you use this standard instead of the old standard, but they both work. Please note that there are a few changes in the standard, such as the absence of a promo image field in this version. 
 
 # Additional Fields 
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |
-| camera | string | The camera model used | 
-| lens | string | The lens model used | 
-| exposure | string | The exposure settings, e.g. "1/125 sec at f/5.6" |
-| focal | number | The focal length of the lens in mm | 
-| iso | number | The ISO setting used | 
-| fullsize | ipfs | Unedited RAW file with max resolution image. If not shooting in RAW, provide largest image in uncompressed format | 
-| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 or 4k |
-| ratio | string | Aspect ratio of the photo, e.g. 16:9 |
+| audio | ipfs | The audio file, mp3 recommended for size | 
+| video | ipfs | Music video file | 
+| clip | ipfs | Intended to be a short video or 30 second preview common on streaming platforms | 
+| youtube | string | Youtube link | 
+| spotify | string | Spotify link | 
+| soundcloud | string | Soundcloud link | 
+
+> Platform Compatibility: The YouTube field is supported by Atomichub's marketplace, and will be embedded so people can easily watch it. The standard also includes fields for Spotify and SoundCloud, Which is not yet supported by any major marketplace, but may be in the future. If you would rather include other platforms, you can use the `link` field, or as a custom field by changing the name of one of these fields before you incorporate it into your schema. 
 
 ## Changed Fields
-`artist` is called `photographer`
+None of the default fields are changed. 
 
 
-| Field | Type | Description |
-| :----:  | :----: | :----: |  
-| photographer | string | Photographer of the work. Use `credits` field for human models, etc., and the photo standard for AI models |
-
-
-# 🛠 Photo NFT Standard 
+# 🛠 Image NFT Standard 
 
 # Light Version 🌞
+
 
 ```javascript
 [
@@ -37,49 +35,29 @@ Use this for any photography-focused NFT schema/category.
     "name": "img", 
     "type": "ipfs"
   },
+  {
+    "name": "audio", 
+    "type": "ipfs"
+  },
+  {
+    "name": "video", 
+    "type": "ipfs"
+  },
   {          
-    "name": "photographer", 
+    "name": "artist", 
     "type": "string"
   },
   {
     "name": "title",
     "type": "string"
   },
-  {
+    {
     "name": "about",
     "type": "string"
   },
   {
-    "name": "camera",
-    "type": "string"
-  },
-  {
-    "name": "lens",
-    "type": "string"
-  },
-  {
-    "name": "exposure",
-    "type": "string"
-  },
-  {
-    "name": "focal",
-    "type": "int64"
-  },
-  {
-    "name": "iso",
-    "type": "int64"
-  },
-  {
-    "name": "fullsize",
+    "name": "clip", 
     "type": "ipfs"
-  },
-  {
-    "name": "resolution",
-    "type": "string"
-  },
-  {
-    "name": "ratio",
-    "type": "string"
   },
   {
     "name": "backimg",
@@ -108,6 +86,22 @@ Use this for any photography-focused NFT schema/category.
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "youtube",
+    "type": "string"
+  },
+  {
+    "name": "spotify",
+    "type": "string"
+  },
+  {
+    "name": "soundcloud",
+    "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "nsfw",
@@ -128,6 +122,7 @@ Use this for any photography-focused NFT schema/category.
 ]
 ```
 
+
 # Spacetime Version 🛸
 
 ```javascript
@@ -140,49 +135,29 @@ Use this for any photography-focused NFT schema/category.
     "name": "img", 
     "type": "ipfs"
   },
+  {
+    "name": "audio", 
+    "type": "ipfs"
+  },
+  {
+    "name": "video", 
+    "type": "ipfs"
+  },
   {          
-    "name": "photographer", 
+    "name": "artist", 
     "type": "string"
   },
   {
     "name": "title",
     "type": "string"
   },
-  {
+    {
     "name": "about",
     "type": "string"
   },
   {
-    "name": "camera",
-    "type": "string"
-  },
-  {
-    "name": "lens",
-    "type": "string"
-  },
-  {
-    "name": "exposure",
-    "type": "string"
-  },
-  {
-    "name": "focal",
-    "type": "int64"
-  },
-  {
-    "name": "iso",
-    "type": "int64"
-  },
-  {
-    "name": "raw",
+    "name": "clip", 
     "type": "ipfs"
-  },
-  {
-    "name": "resolution",
-    "type": "string"
-  },
-  {
-    "name": "ratio",
-    "type": "string"
   },
   {
     "name": "backimg",
@@ -211,6 +186,22 @@ Use this for any photography-focused NFT schema/category.
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "youtube",
+    "type": "string"
+  },
+  {
+    "name": "spotify",
+    "type": "string"
+  },
+  {
+    "name": "soundcloud",
+    "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "timestamp",

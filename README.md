@@ -39,6 +39,7 @@ The individual standards are linked farther down, and exist in the [./Standards]
 |<hr>|<hr>|<hr>|
 | credits | string | List creator credits, suggested format "Script: Gudasol, Director: Pixy the Unicorn"  |  
 | link | string | A link where the work can be purchased or interacted with |  
+| promo | ipfs | Promotional video or photo related to work or project  |  
 | license | string | Declare license (Copyright [Year], CC0, MIT, etc) |  
 | tags | string | Topics related to the NFT as a comma-separated list |  
 | rarity | string | How scarce is this NFT? Abundant Common Uncommon Rare Epic Mythic Unique |  
@@ -96,6 +97,83 @@ For specific use cases, use these versions:
 
 > Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate. 
 
+
+# Light Version 🌞
+
+
+```javascript
+[
+  {
+    "name": "name",
+    "type": "string"
+  },
+  {
+    "name": "img", 
+    "type": "ipfs"
+  },
+  {          
+    "name": "artist", 
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "type": "string"
+  },
+    {
+    "name": "about",
+    "type": "string"
+  },
+  {
+    "name": "backimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "collectionimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "genre",
+    "type": "string"
+  },
+  {
+    "name": "mood",
+    "type": "string"
+  },
+  {
+    "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "credits",
+    "type": "string"
+  },
+  {
+    "name": "link",
+    "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
+  },
+  {
+    "name": "nsfw",
+    "type": "bool"
+  },
+  {
+    "name": "labels",
+    "type": "string"
+  },
+  {
+    "name": "license",
+    "type": "string"
+  },
+  {
+    "name": "rarity",
+    "type": "string"
+  }
+]
+```
+
 # Spacetime Version 🛸
 
 ```javascript
@@ -147,6 +225,10 @@ For specific use cases, use these versions:
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "timestamp",
@@ -206,78 +288,6 @@ For specific use cases, use these versions:
   }
 ]
 ```
-
-
-# Light Version 🌞
-
-
-```javascript
-[
-  {
-    "name": "name",
-    "type": "string"
-  },
-  {
-    "name": "img", 
-    "type": "ipfs"
-  },
-  {          
-    "name": "artist", 
-    "type": "string"
-  },
-  {
-    "name": "title",
-    "type": "string"
-  },
-    {
-    "name": "about",
-    "type": "string"
-  },
-  {
-    "name": "backimg",
-    "type": "ipfs"
-  },
-  {
-    "name": "collectionimg",
-    "type": "ipfs"
-  },
-  {
-    "name": "genre",
-    "type": "string"
-  },
-  {
-    "name": "mood",
-    "type": "string"
-  },
-  {
-    "name": "format",
-    "type": "string"
-  },
-  {
-    "name": "credits",
-    "type": "string"
-  },
-  {
-    "name": "link",
-    "type": "string"
-  },
-  {
-    "name": "nsfw",
-    "type": "bool"
-  },
-  {
-    "name": "labels",
-    "type": "string"
-  },
-  {
-    "name": "license",
-    "type": "string"
-  },
-  {
-    "name": "rarity",
-    "type": "string"
-  }
-]
 
 # Mini-Changelog
 

@@ -82,6 +82,10 @@ Use this for any literature-focused NFT schema/category, like a short story, poe
     "type": "string"
   },
   {
+    "name": "promo", 
+    "type": "ipfs"
+  },
+  {
     "name": "isbn",
     "type": "string"
   },
@@ -162,6 +166,10 @@ Use this for any literature-focused NFT schema/category, like a short story, poe
   {
     "name": "link",
     "type": "string"
+  },
+  {
+    "name": "promo", 
+    "type": "ipfs"
   },
   {
     "name": "timestamp",
