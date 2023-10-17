@@ -40,26 +40,27 @@ The individual standards are linked farther down, and exist in the [./Standards]
 | credits | string | List creator credits, suggested format "Script: Gudasol, Director: Pixy the Unicorn"  |  
 | link | string | A link where the work can be purchased or interacted with |  
 | license | string | Declare license (Copyright [Year], CC0, MIT, etc) |  
+| tags | string | Topics related to the NFT as a comma-separated list |  
 | rarity | string | How scarce is this NFT? Abundant Common Uncommon Rare Epic Mythic Unique |  
 
 
 # Web 4 Options
-Web4 adds **space** and **time** information on top of web3. You'll find full + lite options for each available for each standard: 
+Web4 adds **space** and **time** information on top of web3. You'll find timespace + light options for each available for each standard: 
 
-## Full geotemporal options 
+## Full timespace options 
 | Field | Type | Description | 
 | :----:  | :----: | :---- |
-| timestamp  | string | Timestamp for the publication of the work (simplifies + supercedes date) |
-| date | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup |
-| year       | string | Year when the work was published. Format: "YYYY". ⚠️ It's best to use either date or year/month/day, not both. |
+| timestamp  | int64 | Timestamp for the publication of the work (simplifies + supercedes date) |
+| date | string | Date when the work was published (supercedes / replaces Year/Month/Day) Recommended format is ISO 8601 "YYYY-MM-DD" because "MM-DD-YYYY" can be confused with "DD/MM/YYYY" but it's up to you. To cover all bases, set timestamp field as a backup, or use year/month/day |
+| year       | int64 | Year when the work was published. Format: "YYYY". ⚠️ It's best to use either date or year/month/day, not both. |
 | month      | string | Month when the work was published. Format: "MM" or English abbreviation (e.g., "Jan", "Feb", etc.) or full month name |
-| day        | string | Day when the work was published. Format: "DD" or "D" |
+| day        | int64 | Day when the work was published. Format: "DD" or "D" |
 |<hr>|<hr>|<hr>|
-| location   | string | Full location information in one field, format: "City, State, Nation" Use this |
+| location   | string | Full location information in one field, format: "City, State, Nation"  ⚠️ Use this or nation/state/city, not both |
 | nation     | string | Three-letter ISO country code (e.g., "USA", "BRA", "AUS", etc.) Please don't use anything else, as this is the easiest format for any application to integrate |
 | state      | string | State or province for the location, format: Abbreviation convention used in nation (e.g., California as "CA", Antioquia as "ANT") |
 | city       | string | City for the location, format: "City Name" |
-| geotag     | string | GeoJSON Point stored as string, format "lat,lng" (e.g., "37.7749,-122.4194"), or a "[lat,lng]" coordinate array (e.g., "[37.7749, -122.4194]") |  
+| geotag     | string | TopoJSON Point stored as string, format "lat,lng" (e.g., "37.7749,-122.4194"), or a "[lat,lng]" coordinate array (e.g.,  "[37.7749, -122.4194]") |  
 
 > You may inpmement all options to allow templates of he same schema to choose what's best for them, instead of modifying it and keeping it for future unknown templates. 
 
@@ -94,6 +95,8 @@ For specific use cases, use these versions:
 | Original Music Standard | [currentxchange/Music-NFT-Standard](https://github.com/currentxchange/Music-NFT-Standard) |
 
 > Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate. 
+
+# Spacetime Version 🛸
 
 ```javascript
 [
@@ -147,7 +150,7 @@ For specific use cases, use these versions:
   },
   {
     "name": "timestamp",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "date",
@@ -155,7 +158,7 @@ For specific use cases, use these versions:
   },
   {
     "name": "year",
-    "type": "string"
+    "type": "int64"
   },
     {
     "name": "month",
@@ -163,7 +166,7 @@ For specific use cases, use these versions:
   },
     {
     "name": "day",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "location",
@@ -190,6 +193,10 @@ For specific use cases, use these versions:
     "type": "bool"
   },
   {
+    "name": "labels",
+    "type": "string"
+  },
+  {
     "name": "license",
     "type": "string"
   },
@@ -201,6 +208,76 @@ For specific use cases, use these versions:
 ```
 
 
+# Light Version 🌞
+
+
+```javascript
+[
+  {
+    "name": "name",
+    "type": "string"
+  },
+  {
+    "name": "img", 
+    "type": "ipfs"
+  },
+  {          
+    "name": "artist", 
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "type": "string"
+  },
+    {
+    "name": "about",
+    "type": "string"
+  },
+  {
+    "name": "backimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "collectionimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "genre",
+    "type": "string"
+  },
+  {
+    "name": "mood",
+    "type": "string"
+  },
+  {
+    "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "credits",
+    "type": "string"
+  },
+  {
+    "name": "link",
+    "type": "string"
+  },
+  {
+    "name": "nsfw",
+    "type": "bool"
+  },
+  {
+    "name": "labels",
+    "type": "string"
+  },
+  {
+    "name": "license",
+    "type": "string"
+  },
+  {
+    "name": "rarity",
+    "type": "string"
+  }
+]
 
 # Mini-Changelog
 

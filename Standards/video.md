@@ -8,22 +8,25 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
 | video | ipfs | Video file via IPFS hash | 
 | filetype | string | Video format e.g. MP4, MOV | 
 | duration | string | Video lengths as "days : hour : minutes : seconds" "2:47" = two minutes 47 seconds | 
-| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 | 
-| fps | number | Frames per second of the video | 
+| resolution | string | Width x Height of the photo in pixels e.g. 3840 x 2160 or 4k | 
+| fps | int64 | Frames per second of the video | 
 | ratio | string | Aspect ratio of the photo, e.g. 16:9 | 
 
 ## Changed Fields
 `artist` is called `creator`
 
-Note: In this standard, many marketplaces will always show the img attribute. For this reason
+> Note: In this standard, many marketplaces will always show the img attribute. For this reason, you can choose to include a video in the image field through IPFS, or leave the image field blank, and fill out the video field instead. Both of these options will work on most marketplaces, but some, notably Atomichub, may not allow you to upload a video file to their free image hosting service on IPFS, or may restrict the image file size.
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |  
-| creator | string | Director or channel-owner of the work |  
+| creator | string | Director or channel-owner of the work. Remember to use the `credits` field for multiple |  
 
 
 
 # 🛠 Video NFT Standard 
+
+# Light Version 🌞
+
 ```javascript
 [
   {
@@ -52,6 +55,109 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "filetype",
+    "type": "string"
+  },
+  {
+    "name": "duration",
+    "type": "string"
+  },
+  {
+    "name": "resolution",
+    "type": "string"
+  },
+  {
+    "name": "fps",
+    "type": "int64"
+  },
+  {
+    "name": "ratio",
+    "type": "string"
+  },
+  {
+    "name": "backimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "collectionimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "genre",
+    "type": "string"
+  },
+  {
+    "name": "mood",
+    "type": "string"
+  },
+  {
+    "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "credits",
+    "type": "string"
+  },
+  {
+    "name": "link",
+    "type": "string"
+  },
+  {
+    "name": "nsfw",
+    "type": "bool"
+  },
+  {
+    "name": "labels",
+    "type": "string"
+  },
+  {
+    "name": "license",
+    "type": "string"
+  },
+  {
+    "name": "rarity",
+    "type": "string"
+  }
+]
+```
+
+# Spacetime Version 🛸
+
+```javascript
+[
+  {
+    "name": "name",
+    "type": "string"
+  },
+  {
+    "name": "img", 
+    "type": "ipfs"
+  },
+  {
+    "name": "video", 
+    "type": "ipfs"
+  },
+  {          
+    "name": "creator", 
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "type": "string"
+  },
+  {
+    "name": "about",
+    "type": "string"
+  },
+  {
+    "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "filetype",
     "type": "string"
   },
   {
@@ -100,7 +206,7 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "timestamp",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "date",
@@ -108,7 +214,7 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
   {
     "name": "year",
-    "type": "string"
+    "type": "int64"
   },
     {
     "name": "month",
@@ -116,7 +222,7 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   },
     {
     "name": "day",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "location",
@@ -141,6 +247,10 @@ Note: In this standard, many marketplaces will always show the img attribute. Fo
   {
     "name": "nsfw",
     "type": "bool"
+  },
+  {
+    "name": "labels",
+    "type": "string"
   },
   {
     "name": "license",

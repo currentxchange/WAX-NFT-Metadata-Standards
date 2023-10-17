@@ -1,24 +1,110 @@
 # Literature Media Standard
-Use this for any literature-focused NFT schema/category.
+Use this for any literature-focused NFT schema/category, like a short story, poem, article, or a book you want to publush as a NFT.
 
 # Additional Fields 
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |
-| series | string | Series the work is part of |  
-| pages | number | Number of pages in the work |  
-| isbn | string | ISBN identifier for the work |  
-| publisher | string | Publisher of the work |  
+| series | string | Series the work is part of. |  
+| pages | int64 | Number of pages in the work. |  
+| isbn | string | ISBN identifier for the work.  |  
+| publisher | string | Publisher of the work. |  
 
 ## Changed Fields
 `artist` is called `author`
-`nsfw` field is absent
+`nsfw` field is absent 
 
 | Field | Type | Description |
 | :----:  | :----: | :----: |  
-| author | string | Author of the work |  
+| author | string | The primary author(s) of the work or their pen name. |
+
 
 # 🛠 Literature NFT Standard 
+
+# Light Version 🌞
+
+```javascript
+[
+  {
+    "name": "name",
+    "type": "string"
+  },
+  {
+    "name": "img", 
+    "type": "ipfs"
+  },
+  {          
+    "name": "author", 
+    "type": "string"
+  },
+  {
+    "name": "title",
+    "type": "string"
+  },
+  {
+    "name": "about",
+    "type": "string"
+  },
+  {
+    "name": "series",
+    "type": "string"
+  },
+  {
+    "name": "pages",
+    "type": "int64"
+  },
+  {
+    "name": "backimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "collectionimg",
+    "type": "ipfs"
+  },
+  {
+    "name": "genre",
+    "type": "string"
+  },
+  {
+    "name": "mood",
+    "type": "string"
+  },
+  {
+    "name": "format",
+    "type": "string"
+  },
+  {
+    "name": "credits",
+    "type": "string"
+  },
+  {
+    "name": "link",
+    "type": "string"
+  },
+  {
+    "name": "isbn",
+    "type": "string"
+  },
+  {
+    "name": "publisher",
+    "type": "string"
+  },
+  {
+    "name": "labels",
+    "type": "string"
+  },
+  {
+    "name": "license",
+    "type": "string"
+  },
+  {
+    "name": "rarity",
+    "type": "string"
+  }
+]
+```
+
+# Spacetime Version 🛸
 ```javascript
 [
   {
@@ -79,7 +165,7 @@ Use this for any literature-focused NFT schema/category.
   },
   {
     "name": "timestamp",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "date",
@@ -87,7 +173,7 @@ Use this for any literature-focused NFT schema/category.
   },
   {
     "name": "year",
-    "type": "string"
+    "type": "int64"
   },
     {
     "name": "month",
@@ -95,7 +181,7 @@ Use this for any literature-focused NFT schema/category.
   },
     {
     "name": "day",
-    "type": "string"
+    "type": "int64"
   },
   {
     "name": "location",
@@ -123,6 +209,10 @@ Use this for any literature-focused NFT schema/category.
   },
   {
     "name": "publisher",
+    "type": "string"
+  },
+  {
+    "name": "labels",
     "type": "string"
   },
   {
