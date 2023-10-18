@@ -92,7 +92,7 @@ For specific use cases, use these versions:
 | Video | [Standards/video.md](./Standards/video.md) |
 | Image | [Standards/image.md](./Standards/image.md) |
 | Photo | [Standards/photo.md](./Standards/photo.md) |
-| Music | [Standards/photo.md](./Standards/music.md) |
+| Music | [Standards/music.md](./Standards/music.md) |
 | Original Music Standard | [currentxchange/Music-NFT-Standard](https://github.com/currentxchange/Music-NFT-Standard) |
 
 > Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate. 
