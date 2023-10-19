@@ -9,7 +9,7 @@ by: [cXc](https://cxc.world)
 
 ## Mint professional-looking NFTs 
 
-The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on both US and WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.com/), [WAXdao](https://waxdao.com/) and more. 
+The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.com/), [WAXdao](https://waxdao.com/) and more. 
 
 
 # Learn how to use these in the [Instructional Video](https://www.youtube.com/watch?v=GXjBQnV_Xm8) made for our similar [Music NFT standard](https://github.com/currentxchange/Music-NFT-Standard). 
@@ -38,7 +38,7 @@ The individual standards are linked farther down, and exist in the [./Standards]
 | mood | string | A comma-separated list of categories |  
 |<hr>|<hr>|<hr>|
 | credits | string | List creator credits, suggested format "Script: Gudasol, Director: Pixy the Unicorn"  |  
-| link | string | A link where the work can be purchased or interacted with |  
+| link | string | A link or links where the work can be purchased or interacted with. You can link to multiple platforms for purchase, playback, etc. Suggested format "Platformone: link.to/platformone \| Platformtwo: link.to/platformtwo" |  
 | promo | ipfs | Promotional video or photo related to work or project  |  
 | license | string | Declare license (Copyright [Year], CC0, MIT, etc) |  
 | tags | string | Topics related to the NFT as a comma-separated list |  
