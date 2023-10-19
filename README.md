@@ -4,7 +4,7 @@
 // -- Stats -- \\
 Version: 1.0.0
 Supported Types: Image, Photo, Literature, Music, Video
-Published: [standards.cXc.world](https://standards.cxc.world)
+Published: standards.cXc.world
 ```
 
 ## Mint professional-looking NFTs 
