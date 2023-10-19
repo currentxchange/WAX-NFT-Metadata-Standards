@@ -2,9 +2,9 @@
 
 ```Javascript
 // -- Stats -- \\
-Version: 0.1.0
-Supported Types: 
-by: [cXc](https://cxc.world)
+Version: 1.0.0
+Supported Types: Image, Photo, Literature, Music, Video
+Published: [standards.cXc.world](https://standards.cxc.world)
 ```
 
 ## Mint professional-looking NFTs 
@@ -291,10 +291,10 @@ For specific use cases, use these versions:
 
 # Mini-Changelog
 
-1.0.0 - Initial Release (WIP)
-
+1.0.0 - Initial Release - October 19, 2023
+Added initial media standards and released [standards.cxc.world](https://standards.cxc.world/)
 
 # Support this development
 
-This development is sponsored by [WAX Labs](https://labs.wax.io). Support NFT artists by purchasing + trading their NFTs. 
+This development is made possible through [WAX Labs](https://labs.wax.io). Support NFT artists by purchasing + trading their NFTs. 
 
