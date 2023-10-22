@@ -59,10 +59,6 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
     "type": "string"
   },
   {
-    "name": "format",
-    "type": "string"
-  },
-  {
     "name": "filetype",
     "type": "string"
   },
@@ -163,10 +159,6 @@ Use this for any video NFT schema/category. This can be for a movie or a youtube
   },
   {
     "name": "about",
-    "type": "string"
-  },
-  {
-    "name": "format",
     "type": "string"
   },
   {
