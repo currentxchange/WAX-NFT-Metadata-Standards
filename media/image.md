@@ -1,24 +1,28 @@
-# Image Media Standard
-Use this for any image-focused NFT schema/category that isn't a photograph. 
+# image
 
-# Additional Fields 
-
-| Field | Type | Description |
-| :----:  | :----: | :----: |
-| filetype | string | The filetype of the image | 
-| fullsize | ipfs | Unedited max-resolution image, useful if you want a loadable preview, and the real deal | 
-| resolution | string | Width x Height of the largest-version image in pixels e.g. 3840 x 2160 or 4k |
-| ratio | string | Aspect ratio of the image, e.g. 16:9 |
-| generative | bool | Was AI used to make this image? Give credit to the model/app in the `credits` field |
+## [https://www.youtube.com/watch?v=0jLRFa8Ol5Y](https://www.youtube.com/watch?v=0jLRFa8Ol5Y)
 
 
-## Changed Fields
-None of the default fields are changed. 
 
+Use this for any image-focused NFT schema/category that isn't a photograph.
 
-# 🛠 Image NFT Standard 
+## Additional Fields
 
-# Light Version 🌞
+|    Field   |  Type  |                                       Description                                       |
+| :--------: | :----: | :-------------------------------------------------------------------------------------: |
+|  filetype  | string |                                The filetype of the image                                |
+|  fullsize  |  ipfs  | Unedited max-resolution image, useful if you want a loadable preview, and the real deal |
+| resolution | string |       Width x Height of the largest-version image in pixels e.g. 3840 x 2160 or 4k      |
+|    ratio   | string |                           Aspect ratio of the image, e.g. 16:9                          |
+| generative |  bool  |   Was AI used to make this image? Give credit to the model/app in the `credits` field   |
+
+### Changed Fields
+
+None of the default fields are changed.
+
+## 🛠 Image NFT Standard
+
+## Light Version 🌞
 
 ```javascript
 [
@@ -109,7 +113,7 @@ None of the default fields are changed.
 ]
 ```
 
-# Spacetime Version 🛸
+## Spacetime Version 🛸
 
 ```javascript
 [
