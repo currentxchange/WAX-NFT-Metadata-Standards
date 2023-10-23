@@ -1,6 +1,8 @@
 # Photo Media Standard
 Use this for any photography-focused NFT schema/category. 
 
+> 📺 [Watch the Youtube Tutorial](https://www.youtube.com/watch?v=0jLRFa8Ol5Y)
+
 # Additional Fields 
 
 | Field | Type | Description |

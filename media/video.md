@@ -1,6 +1,8 @@
 # Video Media Standard
 Use this for any video NFT schema/category. This can be for a movie or a youtube video. 
 
+> 📺 [Watch the Youtube Tutorial](https://www.youtube.com/watch?v=0EKb60iGtWE)
+
 # Additional Fields 
 
 | Field | Type | Description | 

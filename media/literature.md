@@ -1,6 +1,8 @@
 # Literature Media Standard
 Use this for any literature-focused NFT schema/category, like a short story, poem, article, or a book you want to publush as a NFT.
 
+> 📺 [Watch the Youtube Tutorial](https://www.youtube.com/watch?v=eSlmOtpiNaM)
+
 # Additional Fields 
 
 | Field | Type | Description |

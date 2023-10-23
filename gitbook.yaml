@@ -1,0 +1,15 @@
+root: ./
+
+structure:
+  start: README.md
+  readme: README.md
+  summary: SUMMARY.md
+
+
+redirects:
+  music: ./media/music.md
+  video: ./media/video.md
+  literature: ./media/literature.md
+  photo: ./media/photo.md
+  image: ./media/image.md
+  tutorial: ./tutorial.md
