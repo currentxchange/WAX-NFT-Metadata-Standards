@@ -1,5 +1,3 @@
-# README
-
 ## WAX NFT Metadata Standards
 
 ```Javascript
