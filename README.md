@@ -19,7 +19,7 @@ Find each standard below
 
 |         Use Case        | Link                                                                                      |
 | :---------------------: | ----------------------------------------------------------------------------------------- |
-|        Literature       | Standards/literature.md                                                                   |
+|        Literature       | [Standards/literature.md](https://standards.cxc.world/media/literature)   |
 |          Video          | [Standards/video.md](https://standards.cxc.world/media/video)                             |
 |          Image          | [Standards/image.md](https://standards.cxc.world/media/image)                             |
 |          Photo          | [Standards/photo.md](https://standards.cxc.world/media/photo)                             |
@@ -99,7 +99,7 @@ For specific use cases, use these versions: [standards.cxc.world/media](https://
 
 |         Use Case        | Link                                                                                      |
 | :---------------------: | ----------------------------------------------------------------------------------------- |
-|        Literature       | Standards/literature.md                                                                   |
+|        Literature       | [Standards/literature.md](https://standards.cxc.world/media/literature)      |
 |          Video          | [Standards/video.md](https://standards.cxc.world/media/video)                             |
 |          Image          | [Standards/image.md](https://standards.cxc.world/media/image)                             |
 |          Photo          | [Standards/photo.md](https://standards.cxc.world/media/photo)                             |
