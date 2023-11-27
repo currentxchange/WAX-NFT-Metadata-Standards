@@ -22,7 +22,7 @@ Use this for any image-focused NFT schema/category that isn't a photograph.
 None of the default fields are changed. 
 
 
-# 🛠 Image NFT Standard 
+# 🛠 Music NFT Standard 
 
 # Light Version 🌞
 
