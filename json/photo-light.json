@@ -1,0 +1,98 @@
+[
+    {
+        "name": "name",
+        "type": "string"
+    },
+    {
+        "name": "img",
+        "type": "ipfs"
+    },
+    {
+        "name": "photographer",
+        "type": "string"
+    },
+    {
+        "name": "title",
+        "type": "string"
+    },
+    {
+        "name": "about",
+        "type": "string"
+    },
+    {
+        "name": "camera",
+        "type": "string"
+    },
+    {
+        "name": "lens",
+        "type": "string"
+    },
+    {
+        "name": "exposure",
+        "type": "string"
+    },
+    {
+        "name": "focal",
+        "type": "int64"
+    },
+    {
+        "name": "iso",
+        "type": "int64"
+    },
+    {
+        "name": "fullsize",
+        "type": "ipfs"
+    },
+    {
+        "name": "resolution",
+        "type": "string"
+    },
+    {
+        "name": "ratio",
+        "type": "string"
+    },
+    {
+        "name": "backimg",
+        "type": "ipfs"
+    },
+    {
+        "name": "collectionimg",
+        "type": "ipfs"
+    },
+    {
+        "name": "genre",
+        "type": "string"
+    },
+    {
+        "name": "mood",
+        "type": "string"
+    },
+    {
+        "name": "format",
+        "type": "string"
+    },
+    {
+        "name": "credits",
+        "type": "string"
+    },
+    {
+        "name": "link",
+        "type": "string"
+    },
+    {
+        "name": "nsfw",
+        "type": "bool"
+    },
+    {
+        "name": "labels",
+        "type": "string"
+    },
+    {
+        "name": "license",
+        "type": "string"
+    },
+    {
+        "name": "rarity",
+        "type": "string"
+    }
+]

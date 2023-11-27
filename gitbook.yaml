@@ -13,3 +13,6 @@ redirects:
   photo: ./media/photo.md
   image: ./media/image.md
   tutorial: ./tutorial.md
+
+ignores:
+  - /json
