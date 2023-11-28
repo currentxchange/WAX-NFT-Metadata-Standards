@@ -1,6 +1,8 @@
 # Image Media Standard
 Use this for any image-focused NFT schema/category that isn't a photograph. 
 
+### ⚡️ Use the new UI to easily create your schema [tools.cxc.world](https://tools.cXc.world)
+
 > 📺 [Watch the Youtube Tutorial](https://www.youtube.com/watch?v=0jLRFa8Ol5Y)
 
 # Additional Fields 

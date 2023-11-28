@@ -8,22 +8,23 @@ Published: standards.cXc.world
 ```
 
 ### Mint professional-looking NFTs
-
 The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.com/), [WAXdao](https://waxdao.com/) and more.
 
 ## Let's GOO!!! 🚀 
 
 Take the [Tutorial to start your collection](https://standards.cxc.world/tutorial)
 
+### ⚡️ Use the new UI to easily create your schema [tools.cXc.world](https://tools.cXc.world)
+
 Find each standard below
 
 |         Use Case        | Link                                                                                      |
 | :---------------------: | ----------------------------------------------------------------------------------------- |
-|        Literature       | [Standards/literature.md](https://standards.cxc.world/media/literature)   |
-|          Video          | [Standards/video.md](https://standards.cxc.world/media/video)                             |
-|          Image          | [Standards/image.md](https://standards.cxc.world/media/image)                             |
-|          Photo          | [Standards/photo.md](https://standards.cxc.world/media/photo)                             |
-|          Music          | [Standards/music.md](https://standards.cxc.world/media/music)                             |
+|        Literature       | [media/literature.md](https://standards.cxc.world/media/literature)   |
+|          Video          | [media/video.md](https://standards.cxc.world/media/video)                             |
+|          Image          | [media/image.md](https://standards.cxc.world/media/image)                             |
+|          Photo          | [media/photo.md](https://standards.cxc.world/media/photo)                             |
+|          Music          | [media/music.md](https://standards.cxc.world/media/music)                             |
 | Original Music Standard | [currentxchange/Music-NFT-Standard](https://github.com/currentxchange/Music-NFT-Standard) |
 
 ## About the Standards
@@ -99,11 +100,11 @@ For specific use cases, use these versions: [standards.cxc.world/media](https://
 
 |         Use Case        | Link                                                                                      |
 | :---------------------: | ----------------------------------------------------------------------------------------- |
-|        Literature       | [Standards/literature.md](https://standards.cxc.world/media/literature)      |
-|          Video          | [Standards/video.md](https://standards.cxc.world/media/video)                             |
-|          Image          | [Standards/image.md](https://standards.cxc.world/media/image)                             |
-|          Photo          | [Standards/photo.md](https://standards.cxc.world/media/photo)                             |
-|          Music          | [Standards/music.md](https://standards.cxc.world/media/music)                             |
+|        Literature       | [media/literature.md](https://standards.cxc.world/media/literature)      |
+|          Video          | [media/video.md](https://standards.cxc.world/media/video)                             |
+|          Image          | [media/image.md](https://standards.cxc.world/media/image)                             |
+|          Photo          | [media/photo.md](https://standards.cxc.world/media/photo)                             |
+|          Music          | [media/music.md](https://standards.cxc.world/media/music)                             |
 | Original Music Standard | [currentxchange/Music-NFT-Standard](https://github.com/currentxchange/Music-NFT-Standard) |
 
 > Works with Atomichub UI out of the box. You can even avoid touching this code by using Create Schema on atomichub to replicate.

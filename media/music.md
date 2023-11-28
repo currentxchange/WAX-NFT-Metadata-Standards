@@ -1,6 +1,8 @@
 # Music Media Standard
 Use this for any image-focused NFT schema/category that isn't a photograph. 
 
+### ⚡️ Use the new UI to easily create your schema [tools.cxc.world](https://tools.cXc.world)
+
 > 📺 [Watch the Youtube Tutorial](https://www.youtube.com/watch?v=ruwx-FeyuWY)
 
 > Note: We have published another [Music NFT standard](https://github.com/currentxchange/Music-NFT-Standard) previous to the media standards. This version is fully compatible with the larger set of media standards published here. To ensure maximum compatibility, we suggest that you use this standard instead of the old standard, but they both work. Please note that there are a few changes in the standard, such as the absence of a promo image field in this version. 
@@ -20,7 +22,6 @@ Use this for any image-focused NFT schema/category that isn't a photograph.
 
 ## Changed Fields
 None of the default fields are changed. 
-
 
 # 🛠 Music NFT Standard 
 
