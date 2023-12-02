@@ -1,0 +1,122 @@
+[
+    {
+        "name": "name",
+        "type": "string"
+    },
+    {
+        "name": "img",
+        "type": "ipfs"
+    },
+    {
+        "name": "author",
+        "type": "string"
+    },
+    {
+        "name": "title",
+        "type": "string"
+    },
+    {
+        "name": "about",
+        "type": "string"
+    },
+    {
+        "name": "series",
+        "type": "string"
+    },
+    {
+        "name": "pages",
+        "type": "int64"
+    },
+    {
+        "name": "backimg",
+        "type": "ipfs"
+    },
+    {
+        "name": "collectionimg",
+        "type": "ipfs"
+    },
+    {
+        "name": "genre",
+        "type": "string"
+    },
+    {
+        "name": "mood",
+        "type": "string"
+    },
+    {
+        "name": "format",
+        "type": "string"
+    },
+    {
+        "name": "credits",
+        "type": "string"
+    },
+    {
+        "name": "link",
+        "type": "string"
+    },
+    {
+        "name": "promo",
+        "type": "ipfs"
+    },
+    {
+        "name": "timestamp",
+        "type": "int64"
+    },
+    {
+        "name": "date",
+        "type": "string"
+    },
+    {
+        "name": "year",
+        "type": "int64"
+    },
+    {
+        "name": "month",
+        "type": "string"
+    },
+    {
+        "name": "day",
+        "type": "int64"
+    },
+    {
+        "name": "location",
+        "type": "string"
+    },
+    {
+        "name": "nation",
+        "type": "string"
+    },
+    {
+        "name": "state",
+        "type": "string"
+    },
+    {
+        "name": "city",
+        "type": "string"
+    },
+    {
+        "name": "geotag",
+        "type": "string"
+    },
+    {
+        "name": "isbn",
+        "type": "string"
+    },
+    {
+        "name": "publisher",
+        "type": "string"
+    },
+    {
+        "name": "labels",
+        "type": "string"
+    },
+    {
+        "name": "license",
+        "type": "string"
+    },
+    {
+        "name": "rarity",
+        "type": "string"
+    }
+]
