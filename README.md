@@ -8,7 +8,7 @@ Published: standards.cXc.world
 ```
 
 ### Mint professional-looking NFTs
-The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.com/), [WAXdao](https://waxdao.com/) and more.
+The WAX NFT metadata standards are a collection of fields to use when creating your schema on Atomic Assets. We provide copy-paste, plug-and-play schemas that work with the most popular markets on WAX, starting with [Atomichub](https://wax.atomichub.io/), [NFThive](https://nfthive.io/), [WAXdao](https://waxdao.io/) and more.
 
 ## Let's GOO!!! 🚀 
 
